@@ -4,21 +4,21 @@ A professional real-time webcam background removal web application built with Ne
 
 ## Features
 
-✨ **Core Functionality**
+ **Core Functionality**
 - Real-time webcam background removal using MediaPipe Selfie Segmentation
 - Multiple background modes: Original, Blur, Gradient, Solid Color, Custom Image
 - 30-60 FPS performance on modern devices
 - Smooth edge detection for hair and shoulders
 - Adaptive quality based on device capabilities
 
-🎨 **Background Modes**
+ **Background Modes**
 - **Original**: Display unprocessed video feed
 - **Blur**: Adjustable background blur (0-50% intensity)
 - **Gradient**: 3 beautiful gradient presets (Purple-Blue, Sunset, Forest)
 - **Solid Color**: Choose any color for your background
 - **Image**: Upload custom background images
 
-⚙️ **Advanced Features**
+ **Advanced Features**
 - Performance monitoring (FPS, memory usage)
 - Recording UI with timer
 - Settings panel for advanced options
