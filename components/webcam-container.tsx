@@ -15,7 +15,7 @@ export default function WebcamContainer({ onFpsUpdate }: WebcamContainerProps) {
   const [modelLoaded, setModelLoaded] = useState(false)
   const selfieSegmentation = useRef<any>(null)
   const perfOptimizer = useRef(new PerformanceOptimizer(DeviceCapabilities.getOptimalTargetFps()))
-  const animationFrameId = useRef<number>()
+  const animationFrameId = useRef<number>(0)
   const frameCount = useRef<number>(0)
   const lastTime = useRef<number>(Date.now())
 
@@ -253,7 +253,7 @@ export default function WebcamContainer({ onFpsUpdate }: WebcamContainerProps) {
   ) => {
     const imageData = ctx.createImageData(videoFrame.width, videoFrame.height)
     const data = imageData.data
-    const maskValues = maskData.data
+    const maskValues = new Uint8Array(maskData.data)
 
     // Apply Gaussian blur to mask for smooth edges
     const blurredMask = gaussianBlur(maskValues, videoFrame.width, videoFrame.height, 3)
