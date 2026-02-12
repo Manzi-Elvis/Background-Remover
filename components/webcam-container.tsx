@@ -379,7 +379,7 @@ export default function WebcamContainer({ onFpsUpdate }: WebcamContainerProps) {
       <video ref={videoRef} className="hidden" />
 
       {/* Main canvas display with glassmorphism */}
-      <div className="relative flex-1 overflow-hidden rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 p-1">
+      <div className="relative flex-1 overflow-hidden rounded-2xl bg-linear-to-br from-primary/10 to-accent/10 p-1">
         <div className="absolute inset-0 rounded-2xl bg-black/40 backdrop-blur-sm" />
         <div className="relative h-full w-full overflow-hidden rounded-xl bg-black">
           <canvas
