@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground dark">
       {/* Header */}
-      <header className="absolute top-0 left-0 right-0 z-50 flex items-center justify-between bg-gradient-to-b from-black/40 to-transparent px-6 py-4 backdrop-blur-sm">
+      <header className="absolute top-0 left-0 right-0 z-50 flex items-center justify-between bg-linear-to-b from-black/40 to-transparent px-6 py-4 backdrop-blur-sm">
         <div className="flex items-center gap-2">
           <div className="text-2xl">✨</div>
           <h1 className="text-xl font-bold text-white">Background Remover</h1>
